@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from 'react';
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState('ko'); // Korean as default
+  const [language, setLanguage] = useState('en'); // Korean as default
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'en' ? 'ko' : 'en');
